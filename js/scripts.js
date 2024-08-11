@@ -391,6 +391,11 @@ function initGmag() {
     }
     if ($(".single-grid-slider").length > 0) {
         var teamCarousel = new Swiper(".single-grid-slider .swiper-container", {
+              autoplay: {
+    delay: 1500, // Time between slides (in milliseconds)
+    disableOnInteraction: false
+  },
+
             preloadImages: false,
             loop: true,
             centeredSlides: false,
